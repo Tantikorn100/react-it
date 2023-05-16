@@ -5,7 +5,7 @@ function EquipmentTable() {
   const [equipments, setEquipments] = useState([]);
 
   useEffect(() => {
-    axios.get(' https://giddy-shoe-elk.cyclic.app/Equipment')
+    axios.get('https://giddy-shoe-elk.cyclic.app/Equipment')
       .then(res => {
         console.log(res.data);
         setEquipments(res.data);
