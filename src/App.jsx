@@ -20,7 +20,7 @@ function App() {
   };
 
   useEffect(() => {
-    axios.get(' https://giddy-shoe-elk.cyclic.app/Employee')
+    axios.get('https://giddy-shoe-elk.cyclic.app/Employee')
       .then(res => {
         console.log(res.data);
         setEmployee(res.data);
@@ -29,7 +29,7 @@ function App() {
         console.log(error);
       });
 
-    axios.get(' https://giddy-shoe-elk.cyclic.app/Equipment')
+    axios.get('https://giddy-shoe-elk.cyclic.app/Equipment')
       .then(res => {
         console.log(res.data);
         setEquipment(res.data);
@@ -38,7 +38,7 @@ function App() {
         console.log(error);
       });
 
-    axios.get(' https://giddy-shoe-elk.cyclic.app/Loan')
+    axios.get('https://giddy-shoe-elk.cyclic.app/Loan')
       .then(res => {
         console.log(res.data);
         setLoan(res.data);
@@ -47,7 +47,7 @@ function App() {
         console.log(error);
       });
 
-    axios.get(' https://giddy-shoe-elk.cyclic.app/quantity')
+    axios.get('https://giddy-shoe-elk.cyclic.app/quantity')
       .then(res => {
         console.log(res.data);
         setQuantity(res.data);
